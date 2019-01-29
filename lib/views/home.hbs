@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Warehouse UI</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      window.__PRELOADED_STATE__ = {{{ cache }}}
+    </script>
+    {{#each jsAssets }}
+        <script src={{this}}></script>
+    {{/each}}
+  </body>
+</html>

@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+require('../lib')(function (err, app) {
+  if (err) {
+    return app.log.error('Error starting warehouse.ai-ui', err);
+  }
+  app.log.info('Warehouse.ai-ui started on %s', app.config.get('http'));
+});

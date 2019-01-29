@@ -1,0 +1,11 @@
+{
+  "env": "development",
+  "http": 8080,
+  "wrhs": {
+    "uri": "https://the-uri-for-your-warehouse.instance",
+    "statusUri": "https://wrhs-status.api"
+  },
+  "cache": {
+    "packages": 300000
+  }
+}

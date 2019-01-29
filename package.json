@@ -1,0 +1,98 @@
+{
+  "name": "warehouse.ai-ui",
+  "version": "1.0.0",
+  "description": "UI for warehouse.ai",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "webpack --progress",
+    "build:watch": "NODE_ENV=development webpack --progress --watch",
+    "build:analyze": "NODE_ENV=production ANALYZE=true webpack --progress",
+    "test": "nyc --reporter=text --reporter=json-summary npm run test:all",
+    "test:all": "npm run test:server && npm run test:web",
+    "test:server": "mocha 'test/server/**/*.test.js'",
+    "test:web": "mocha --require setup-env test/web/*.test.js",
+    "lint": "eslint-godaddy -c .eslintrc '{lib,test,src}/**/*.{js,json}' *.js",
+    "pretest": "npm run lint && npm run build",
+    "start": "./bin/server",
+    "prepublishOnly": "NODE_ENV=production npm run build"
+  },
+  "setup": {
+    "extensions": [
+      ".css",
+      ".less"
+    ]
+  },
+  "maintainers": [
+    "Geoff Wall <gwall1@godaddy.com>",
+    "Michael Luther <mluther1@godaddy.com>"
+  ],
+  "reviewers": [
+    "Sivan Mehta <smehta@godaddy.com>",
+    "Jarrett Cruger <jcruger@godaddy.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/godaddy/warehouse.ai-ui.git"
+  },
+  "author": "GoDaddy.com Operating Company, LLC",
+  "license": "MIT",
+  "devDependencies": {
+    "assume": "^2.1.0",
+    "assume-sinon": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-import": "^1.10.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.5.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "eslint": "^5.7.0",
+    "eslint-config-godaddy-react": "^3.0.0",
+    "eslint-plugin-graphql": "^3.0.1",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-mocha": "^5.2.0",
+    "eslint-plugin-react": "^7.1.0",
+    "jsdom": "^13.0.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "mocha": "^5.2.0",
+    "nock": "^10.0.1",
+    "nyc": "^13.1.0",
+    "setup-env": "^1.2.1",
+    "sinon": "^7.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.12.0",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "antd": "^3.10.2",
+    "apollo-boost": "^0.1.18",
+    "apollo-cache-inmemory": "^1.3.8",
+    "apollo-link-schema": "^1.1.1",
+    "apollo-utilities": "^1.0.25",
+    "express": "^4.16.3",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.10.0",
+    "graphql-tools": "^4.0.2",
+    "hbs": "^4.0.1",
+    "morgan": "^1.9.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-apollo": "^2.2.4",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "request": "^2.87.0",
+    "slay": "^1.1.0",
+    "slay-config": "^2.2.0",
+    "slay-log": "^2.3.0",
+    "warehouse.ai-api-client": "^4.3.0",
+    "winston": "^2.0.0"
+  }
+}
