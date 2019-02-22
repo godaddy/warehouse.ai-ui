@@ -15,7 +15,7 @@
     "pretest": "npm run lint && npm run build",
     "start": "./bin/server",
     "prepublishOnly": "NODE_ENV=production npm run build && npm run docs",
-    "docs": "swagger-jsdoc -d lib/swagger/definition.js -o lib/swagger/documentation.json"
+    "docs": "swagger-jsdoc -d lib/swagger.js -o dist/swagger.json"
   },
   "setup": {
     "extensions": [
