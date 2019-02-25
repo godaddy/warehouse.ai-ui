@@ -4,7 +4,7 @@
   "description": "UI for warehouse.ai",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "webpack --progress",
+    "build": "webpack --progress && npm run docs",
     "build:watch": "NODE_ENV=development webpack --progress --watch",
     "build:analyze": "NODE_ENV=production ANALYZE=true webpack --progress",
     "test": "nyc --reporter=text --reporter=json-summary npm run test:all",
@@ -13,7 +13,6 @@
     "test:web": "mocha --require setup-env test/web/*.test.js",
     "lint": "eslint-godaddy -c .eslintrc '{lib,test,src}/**/*.{js,json}' *.js",
     "pretest": "npm run lint && npm run build",
-    "postinstall": "npm run docs",
     "start": "./bin/server",
     "prepublishOnly": "NODE_ENV=production npm run build && npm run docs",
     "docs": "swagger-jsdoc -d lib/swagger.js -o dist/swagger.json"
