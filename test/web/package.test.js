@@ -14,7 +14,6 @@ describe('Package', function () {
           version: '2.1.0',
           status: {
             complete: true,
-            error: false,
             progress: { percentage: 100 }
           }
         },
@@ -23,7 +22,6 @@ describe('Package', function () {
           version: '2.0.0',
           status: {
             complete: true,
-            error: false,
             progress: { percentage: 100 }
           }
         },
@@ -32,7 +30,6 @@ describe('Package', function () {
           version: '1.1.0',
           status: {
             complete: true,
-            error: false,
             progress: { percentage: 100 }
           }
         }
@@ -51,7 +48,7 @@ describe('Package', function () {
     });
 
     it('renders an error message', function () {
-      tree = mount(<MemoryRouter><Package error/></MemoryRouter>);
+      tree = mount(<MemoryRouter><Package error={{ message: 'unable to find package' }}/></MemoryRouter>);
       assume(tree.text()).equals('Unable to load package information.');
     });
 
@@ -112,7 +109,6 @@ describe('Package', function () {
             version: '2.1.0',
             status: {
               complete: true,
-              error: false,
               progress: { percentage: 100 }
             }
           }

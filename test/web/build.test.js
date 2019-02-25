@@ -54,7 +54,7 @@ describe('Build', function () {
     });
 
     it('renders an error message', function () {
-      tree = mount(<MemoryRouter><Build error/></MemoryRouter>);
+      tree = mount(<MemoryRouter><Build error={{ message: 'Build not found' }}/></MemoryRouter>);
       assume(tree.text()).equals('Unable to load build information.');
     });
 
