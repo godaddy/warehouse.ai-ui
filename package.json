@@ -12,7 +12,8 @@
     "test:server": "mocha 'test/server/**/*.test.js'",
     "test:web": "mocha --require setup-env test/web/*.test.js",
     "lint": "eslint-godaddy -c .eslintrc '{lib,test,src}/**/*.{js,json}' *.js",
-    "pretest": "npm run lint && npm run build && npm run docs",
+    "pretest": "npm run lint && npm run build",
+    "postinstall": "npm run docs",
     "start": "./bin/server",
     "prepublishOnly": "NODE_ENV=production npm run build && npm run docs",
     "docs": "swagger-jsdoc -d lib/swagger.js -o dist/swagger.json"
