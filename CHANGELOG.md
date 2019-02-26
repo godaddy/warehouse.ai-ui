@@ -1,5 +1,7 @@
 # CHANGELOG
 
+- [#2] Fix the CI by generating the docs at build time
+
 ### 1.1.0
 
 - [#1] Add Swagger Docs
@@ -14,3 +16,4 @@
 - Initial Implementation
 
 [#1]: https://github.com/godaddy/warehouse.ai-ui/pull/1
+[#2]: https://github.com/godaddy/warehouse.ai-ui/pull/2
