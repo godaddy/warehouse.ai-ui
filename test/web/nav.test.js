@@ -10,7 +10,11 @@ describe('Nav', function () {
 
     it('creates a complex nav', function () {
       const props = { path: '/something/really/super/crazy' };
-      const tree = mount(<MemoryRouter><Nav { ...props }/></MemoryRouter>);
+      const tree = mount(
+        <MemoryRouter>
+          <Nav { ...props }><p>content</p></Nav>
+        </MemoryRouter>
+      );
 
       assume(tree.find('Breadcrumb').text()).equals('Home/something/really/super/crazy/');
       assume(tree.find('BreadcrumbItem').length).equals(5);
@@ -26,7 +30,11 @@ describe('Nav', function () {
 
     it('creates the links', function () {
       const props = { path: '/something/really/super/crazy' };
-      const tree = mount(<MemoryRouter><Nav { ...props }/></MemoryRouter>);
+      const tree = mount(
+        <MemoryRouter>
+          <Nav { ...props }><p>content</p></Nav>
+        </MemoryRouter>
+      );
       const links = tree.find('Link');
 
       assume(links.at(0).prop('to')).equals('/');
@@ -38,7 +46,11 @@ describe('Nav', function () {
 
     it('handles uri encoded path parts', function () {
       const props = { path: `/${encodeURIComponent('@scope/package')}/thing` };
-      const tree = mount(<MemoryRouter><Nav { ...props }/></MemoryRouter>);
+      const tree = mount(
+        <MemoryRouter>
+          <Nav { ...props }><p>content</p></Nav>
+        </MemoryRouter>
+      );
       const links = tree.find('Link');
 
       assume(links.at(0).prop('to')).equals('/');

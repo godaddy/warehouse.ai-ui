@@ -22,7 +22,6 @@ describe('Packages', function () {
           version: '1.1.0',
           status: {
             complete: true,
-            error: false,
             progress: { percentage: 100 }
           }
         }
@@ -35,7 +34,7 @@ describe('Packages', function () {
           version: '2.2.0',
           status: {
             complete: true,
-            error: true,
+            error: { message: 'build failed' },
             progress: { percentage: 100 }
           }
         },
@@ -44,7 +43,7 @@ describe('Packages', function () {
           version: '2.1.0',
           status: {
             complete: false,
-            error: true,
+            error: { message: 'build failed' },
             progress: { percentage: 10 }
           }
         }
@@ -64,12 +63,12 @@ describe('Packages', function () {
     });
 
     it('renders an error message', function () {
-      tree = mount(<MemoryRouter><Packages error/></MemoryRouter>);
+      tree = mount(<MemoryRouter><Packages error={{ message: 'Packages not found' }}/></MemoryRouter>);
       assume(tree.text()).equals('Unable to load packages.');
     });
 
     it('renders the cache timing info', function () {
-      assume(tree.find('.packages-footer').text()).contains('Package data refreshed at Thu Nov 08 2018 15:18:10 GMT-0700');
+      assume(tree.find('.packages-footer').text()).contains(`Package data refreshed at ${new Date('2018-11-08T22:18:10.471Z')}`);
     });
 
     it('renders the correct number of package', function () {
