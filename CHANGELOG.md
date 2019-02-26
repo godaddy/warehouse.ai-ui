@@ -1,5 +1,7 @@
 # CHANGELOG
 
+### 1.1.1
+
 - [#2] Fix the CI by generating the docs at build time
 
 ### 1.1.0
