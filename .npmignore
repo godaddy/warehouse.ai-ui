@@ -20,4 +20,5 @@ coverage
 # Generated files (include generate javascript but ignore webpack hms stuff)
 .DS_Store
 dist/*.json
+!dist/swagger.json
 dist/*.hot-update.js
