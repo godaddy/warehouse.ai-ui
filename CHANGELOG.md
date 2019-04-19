@@ -4,6 +4,7 @@
   - Add: `CONTRUBUTING.md`, `SECURITY.md`
   - update `LICENSE` year
   - add `.github` templates
+  - Give credits for Github templates
 
 ### 1.1.1
 
