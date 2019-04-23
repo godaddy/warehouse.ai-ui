@@ -1,5 +1,11 @@
 # CHANGELOG
 
+- [#5] Default documenation
+  - Add: `CONTRUBUTING.md`, `SECURITY.md`
+  - update `LICENSE` year
+  - add `.github` templates
+  - Give credits for Github templates
+
 ### 1.1.1
 
 - [#2] Fix the CI by generating the docs at build time
@@ -19,3 +25,4 @@
 
 [#1]: https://github.com/godaddy/warehouse.ai-ui/pull/1
 [#2]: https://github.com/godaddy/warehouse.ai-ui/pull/2
+[#5]: https://github.com/godaddy/warehoue.ai-ui/pull/5
