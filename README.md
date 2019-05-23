@@ -38,8 +38,8 @@ npm run build
 
 Warehouse UI is backed by a GraphQL API. This API transforms the data from the
 existing warehouse API to a model that is specific to this UI. The GraphQL
-models are based on [warehouse-models]. Refer to its schemas for a reference
-on data and properties that are available.
+models are based on [warehouse-models] and [warehouse.ai-status-models].
+Refer to those schemas for a data reference and properties that are available.
 
 ### Libraries used
 
@@ -121,3 +121,4 @@ npm test
 [`graphql-tools`]: https://www.apollographql.com/docs/graphql-tools/
 [`makeExecutableSchema`]: https://www.apollographql.com/docs/graphql-tools/generate-schema.html#makeExecutableSchema
 [warehouse-models]: https://github.com/warehouseai/warehouse-models#schemas
+[warehouse-status-models]: https://github.com/warehouseai/warehouse.ai-status-models#schemas
