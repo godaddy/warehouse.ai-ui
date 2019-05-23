@@ -1,5 +1,7 @@
 # CHANGELOG
 
+- [#6] Update `README.md`
+  - Update patch/minor dependencies
 - [#5] Default documenation
   - Add: `CONTRUBUTING.md`, `SECURITY.md`
   - update `LICENSE` year
@@ -25,4 +27,5 @@
 
 [#1]: https://github.com/godaddy/warehouse.ai-ui/pull/1
 [#2]: https://github.com/godaddy/warehouse.ai-ui/pull/2
-[#5]: https://github.com/godaddy/warehoue.ai-ui/pull/5
+[#5]: https://github.com/godaddy/warehouse.ai-ui/pull/5
+[#6]: https://github.com/godaddy/warehouse.ai-ui/pull/6
