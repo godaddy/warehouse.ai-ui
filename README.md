@@ -7,6 +7,7 @@
 [![Dependencies](https://img.shields.io/david/godaddy/warehouse.ai-ui.svg?style=flat-square)](https://github.com/godaddy/warehouse.ai-ui/blob/master/package.json)
 
 UI for [Warehouse.ai]. Visual representation of your builds and status events.
+For convenience, a [CLI][wrhs] also exists for [Warehouse.ai].
 
 ## Install
 
@@ -59,13 +60,13 @@ without needing any schema changes.
 
 At a minimum you, must provide that path where which `warehouse.ai-ui` can find
 your configuration. Because this is largely a wrapper around [`slay`], the
-configuration directory must take the same exact same form. Example config
+configuration directory must take the exact same form. Example config
 files can be found in [`/lib/config`](/lib/config).
 Additionally, the configuration files should include configuration information
 for the [warehouse.ai-api-client]. This information should be under the `wrhs`
 key in the config.
 
-```bash
+```js
 const WrhsAiUI = require('warehouse.ai-ui');
 const configPath = '/path/to/config/files';
 
@@ -121,4 +122,5 @@ npm test
 [`graphql-tools`]: https://www.apollographql.com/docs/graphql-tools/
 [`makeExecutableSchema`]: https://www.apollographql.com/docs/graphql-tools/generate-schema.html#makeExecutableSchema
 [warehouse-models]: https://github.com/warehouseai/warehouse-models#schemas
-[warehouse-status-models]: https://github.com/warehouseai/warehouse.ai-status-models#schemas
+[warehouse.ai-status-models]: https://github.com/warehouseai/warehouse.ai-status-models#schemas
+[wrhs]: https://github.com/warehouseai/wrhs/
