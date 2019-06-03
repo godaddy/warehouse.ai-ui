@@ -1,6 +1,6 @@
 # CHANGELOG
 
-- [#??] Update Swagger/OpenAPI spec to be a little more explicit about html views and static files
+- [#7] Update Swagger/OpenAPI spec to be a little more explicit about html views and static files
 - [#6] Update `README.md`
   - Update patch/minor dependencies
 - [#5] Default documenation
@@ -30,3 +30,4 @@
 [#2]: https://github.com/godaddy/warehouse.ai-ui/pull/2
 [#5]: https://github.com/godaddy/warehouse.ai-ui/pull/5
 [#6]: https://github.com/godaddy/warehouse.ai-ui/pull/6
+[#7]: https://github.com/godaddy/warehouse.ai-ui/pull/7
