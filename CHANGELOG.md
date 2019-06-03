@@ -1,5 +1,6 @@
 # CHANGELOG
 
+- [#??] Update Swagger/OpenAPI spec to be a little more explicit about html views and static files
 - [#6] Update `README.md`
   - Update patch/minor dependencies
 - [#5] Default documenation
