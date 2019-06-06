@@ -1,5 +1,7 @@
 # CHANGELOG
 
+### 1.1.3
+
 - [#7] Update Swagger/OpenAPI spec to be a little more explicit about html views and static files
 - [#6] Update `README.md`
   - Update patch/minor dependencies
@@ -8,6 +10,10 @@
   - update `LICENSE` year
   - add `.github` templates
   - Give credits for Github templates
+
+### 1.1.2
+
+- [#3] Don't ignore swagger.json in published version, we need it
 
 ### 1.1.1
 
@@ -28,6 +34,7 @@
 
 [#1]: https://github.com/godaddy/warehouse.ai-ui/pull/1
 [#2]: https://github.com/godaddy/warehouse.ai-ui/pull/2
+[#3]: https://github.com/godaddy/warehouse.ai-ui/pull/3
 [#5]: https://github.com/godaddy/warehouse.ai-ui/pull/5
 [#6]: https://github.com/godaddy/warehouse.ai-ui/pull/6
 [#7]: https://github.com/godaddy/warehouse.ai-ui/pull/7
