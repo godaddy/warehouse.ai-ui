@@ -1,5 +1,7 @@
 # CHANGELOG
 
+ - [#8] Fixed issue with cards not aligning properly
+
 ### 1.1.3
 
 - [#7] Update Swagger/OpenAPI spec to be a little more explicit about html views and static files
@@ -38,3 +40,4 @@
 [#5]: https://github.com/godaddy/warehouse.ai-ui/pull/5
 [#6]: https://github.com/godaddy/warehouse.ai-ui/pull/6
 [#7]: https://github.com/godaddy/warehouse.ai-ui/pull/7
+[#8]: https://github.com/godaddy/warehouse.ai-ui/pull/8
