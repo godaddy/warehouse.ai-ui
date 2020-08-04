@@ -15,7 +15,9 @@
     "pretest": "npm run lint && npm run build",
     "start": "./bin/server",
     "prepublishOnly": "NODE_ENV=production npm run build && npm run docs",
-    "docs": "swagger-jsdoc -d lib/swagger.js -o dist/swagger.json"
+    "docs": "swagger-jsdoc -d lib/swagger.js -o dist/swagger.json",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "setup": {
     "extensions": [
@@ -97,6 +99,8 @@
     "slay-log": "^2.3.0",
     "swagger-ui-express": "^4.0.4",
     "warehouse.ai-api-client": "^4.4.0",
-    "winston": "^2.0.0"
-  }
+    "winston": "^2.0.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
