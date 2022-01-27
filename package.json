@@ -95,7 +95,7 @@
     "slay": "^1.1.0",
     "slay-config": "^2.2.0",
     "slay-log": "^2.3.0",
-    "swagger-ui-express": "^4.0.4",
+    "swagger-ui-express": "^4.2.0",
     "warehouse.ai-api-client": "^4.4.0",
     "winston": "^2.0.0"
   }
