@@ -84,7 +84,7 @@
     "graphql": "^14.3.0",
     "graphql-tag": "^2.10.0",
     "graphql-tools": "^4.0.2",
-    "hbs": "^4.0.4",
+    "hbs": "^4.1.2",
     "morgan": "^1.9.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
@@ -92,10 +92,10 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^4.3.1",
     "request": "^2.87.0",
-    "slay": "^1.1.0",
-    "slay-config": "^2.2.0",
-    "slay-log": "^2.3.0",
-    "swagger-ui-express": "^4.0.4",
+    "slay": "^4.0.0",
+    "slay-config": "^2.3.0",
+    "slay-log": "^2.3.2",
+    "swagger-ui-express": "^4.2.0",
     "warehouse.ai-api-client": "^4.4.0",
     "winston": "^2.0.0"
   }
